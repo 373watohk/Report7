@@ -8,7 +8,7 @@ void print_array(int scores[], int SIZE){
     int tmp;
     for(int i=0; i<SIZE; ++i) {
         for (int j = i + 1; j < SIZE; ++j) {
-            if (scores[i] > scores[j]) {
+            if (scores[i] < scores[j]) {
                 tmp = scores[i];
                 scores[i] = scores[j];
                 scores[j] = tmp;
